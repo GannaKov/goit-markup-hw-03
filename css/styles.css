@@ -48,6 +48,11 @@ body {
   outline: 1px dashed tomato;
 }
 
+.page-header {
+  padding: 24px 215px 25px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
 .logo {
   font-family: "Raleway", "Verdana", "Tahoma", sans-serif;
   color: var(--logo-accent);
@@ -99,17 +104,28 @@ body {
 .hero {
   background-color: var(--hero-footer-color);
 }
+.hero-content {
+  padding: 200px 237px;
+}
 .hero-title {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  height: 120px;
   color: rgba(255, 255, 255, 1);
+
+  margin-bottom: 30px;
 }
 
 .hero-btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  height: 50px;
   color: rgba(255, 255, 255, 1);
   background-color: var(--btn-background);
 
@@ -118,11 +134,12 @@ body {
   font-size: 16px;
   line-height: 1.88;
 
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -133,6 +150,9 @@ body {
 
 /* ----- Блок Особенности -----*/
 /*скрывается заголовок*/
+.qualities {
+  padding: 215px 94px;
+}
 
 .visually-hidden {
   position: absolute;
