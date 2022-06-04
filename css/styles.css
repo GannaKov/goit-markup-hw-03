@@ -32,6 +32,9 @@ button {
 .list {
   list-style: none;
 }
+.img {
+  display: block;
+}
 
 body {
   background-color: #ffffff;
@@ -42,7 +45,7 @@ body {
 /*-------------------------------*/
 /*------------ header -----------*/
 .container {
-  width: 1200px;
+  width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px dashed tomato;
@@ -60,6 +63,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  width: 145px;
 }
 .logo-accent {
   color: rgba(33, 33, 33, 1);
@@ -103,9 +107,11 @@ body {
 /* ------- HERO ------*/
 .hero {
   background-color: var(--hero-footer-color);
+  padding: 200px 235px;
 }
+
 .hero-content {
-  padding: 200px 237px;
+  padding: 200px 235px;
 }
 .hero-title {
   text-align: center;
@@ -115,10 +121,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 696px;
-  height: 120px;
-  color: rgba(255, 255, 255, 1);
+  margin: 0 auto 30px;
 
-  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .hero-btn {
@@ -138,6 +143,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -151,7 +157,7 @@ body {
 /* ----- Блок Особенности -----*/
 /*скрывается заголовок*/
 .qualities {
-  padding: 215px 94px;
+  padding: 94px 0;
 }
 
 .visually-hidden {
@@ -167,11 +173,19 @@ body {
   margin: -1px;
 }
 /*--------------------------*/
+.qualities-item:not(:last-child) {
+  margin-right: 30px;
+}
+.qualities-item {
+  width: 270px;
+}
+
 .qualities-sec-title {
   color: var(--sec-title-color);
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .qualities-text {
   color: var(--paragraph-text);
@@ -179,20 +193,37 @@ body {
   letter-spacing: 0.03em;
 }
 /* --- Блок Чем мы занимаемся--- */
+.dealing {
+  padding-bottom: 94px;
+}
 
+.dealing-item:not(:last-child) {
+  margin-right: 30px;
+}
+.dealing-item {
+  width: 370px;
+  height: 294px;
+}
 .dealing-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 /* -------Блок Наша команда-------*/
 .team {
   background-color: rgba(245, 244, 250, 1);
+  padding: 94px 0;
 }
 .team-item {
   background-color: rgba(255, 255, 255, 1);
+  width: 270px;
+  height: 368px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-title {
@@ -211,11 +242,14 @@ body {
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin: 30px 0 10px;
 }
 .team-text {
   color: var(--paragraph-text);
   font-size: 16px;
   line-height: 1.19;
+
   /* identical to box height */
 
   text-align: center;
@@ -224,6 +258,16 @@ body {
 /* ------- Footer -------- */
 .page-footer {
   background-color: var(--hero-footer-color);
+  padding: 60px 0;
+}
+.page-footer .logo {
+  outline: 1px solid goldenrod;
+}
+.adr {
+  margin-top: 20px;
+}
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-logo-accent {
@@ -235,6 +279,7 @@ body {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  outline: 1px solid green;
 }
 
 .footer-email,
