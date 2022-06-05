@@ -63,10 +63,21 @@ body {
   margin: 0 auto;
   outline: 1px dashed tomato;
 }
+.section {
+  padding: 94px 0;
+}
 
 .page-header {
   padding: 24px 215px 25px;
   border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -76,7 +87,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  width: 145px;
+  margin-right: 93px;
 }
 .logo-accent {
   color: rgba(33, 33, 33, 1);
@@ -87,6 +98,11 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+.header-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-list .link:visited {
@@ -102,7 +118,14 @@ body {
 .header-contacts .link:hover {
   color: var(--link-hover);
 }
-
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header-email {
+  margin-right: 50px;
+}
 .header-contacts .link {
   color: rgba(117, 117, 117, 1);
   font-weight: 500;
@@ -170,14 +193,17 @@ body {
 /* ----- Блок Особенности -----*/
 
 .qualities {
-  padding: 94px 0;
 }
 
-.qualities-item:not(:last-child) {
+/*.qualities-item:not(:last-child) {
   margin-right: 30px;
-}
+}*/
 .qualities-item {
   width: 270px;
+}
+.qualities-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .qualities-sec-title {
@@ -194,7 +220,7 @@ body {
 }
 /* --- Блок Чем мы занимаемся--- */
 .dealing {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .dealing-item:not(:last-child) {
@@ -215,7 +241,6 @@ body {
 /* -------Блок Наша команда-------*/
 .team {
   background-color: rgba(245, 244, 250, 1);
-  padding: 94px 0;
 }
 .team-item {
   background-color: rgba(255, 255, 255, 1);
@@ -298,7 +323,6 @@ body {
 
 /* ----- Portfolio ------ */
 .examples {
-  padding: 94px 0;
 }
 .exaples-title {
 }
