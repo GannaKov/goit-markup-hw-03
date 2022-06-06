@@ -267,7 +267,6 @@ body {
 .team-item {
   background-color: rgba(255, 255, 255, 1);
   width: 270px;
-  height: 368px;
   padding-bottom: 30px;
 }
 .team-item:not(:last-child) {
@@ -291,7 +290,6 @@ body {
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
-
   margin: 30px 0 10px;
 }
 .team-text {
@@ -349,14 +347,18 @@ body {
 }
 .exaples-title {
 }
+
+.examples-navi {
+}
+.container .examples-navi {
+}
 .exaples-filter {
-  width: 611px;
-  margin-bottom: 34px;
 }
 
 .exaples-filter-btn {
-  display: block;
+  display: inline-block;
   padding: 6px 22px;
+  height: 38px;
   color: rgba(33, 33, 33, 1);
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
@@ -369,6 +371,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+.filtr-btn:not(:last-child) {
+  margin-right: 8px;
 }
 .filter-first-btn {
   color: var(--btn-fokus-text);

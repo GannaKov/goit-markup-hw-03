@@ -45,12 +45,12 @@
           </ul>
         </nav>
         <ul class="header-contacts list">
-          <li>
+          <li class="item">
             <a class="header-email link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a class="header-tel link" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
@@ -64,11 +64,12 @@
       <section class="examples section">
         <div class="container">
           <!-- Фильр -->
-          <div class="exaples-filter">
-            <h1 class="exaples-title visually-hidden">Примеры работ</h1>
 
-            <ul class="list -list">
-              <li>
+          <h1 class="exaples-title visually-hidden">Примеры работ</h1>
+          
+          <!--<div class="exaples-filter"> -->
+            <ul class="list examples-navi">
+              <li class="filtr-btn">
                 <button
                   class="exaples-filter-btn filter-first-btn"
                   type="button"
@@ -76,28 +77,29 @@
                   Все
                 </button>
               </li>
-              <li>
+              <li class="filtr-btn">
                 <button class="exaples-filter-btn" type="button">
                   Веб-сайты
                 </button>
               </li>
-              <li>
+              <li class="filtr-btn">
                 <button class="exaples-filter-btn" type="button">
                   Приложения
                 </button>
               </li>
-              <li>
+              <li class="filtr-btn">
                 <button class="exaples-filter-btn" type="button">Дизайн</button>
               </li>
-              <li>
+              <li class="filtr-btn">
                 <button class="exaples-filter-btn" type="button">
                   Маркетинг
                 </button>
               </li>
             </ul>
-          </div>
+         <!--</div> --> 
+
           <!--  Карточки работ  -->
-          <div class="examles-card">
+         <!--<div class="examles-card">--> 
             <ul class="exaples-list list">
               <li class="exaples-list-item">
                 <a class="exaples-link link" href="">
@@ -198,40 +200,42 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-      </section>
+          
+        
+    </section>
       <!--  Футер -->
     </main>
-    <footer class="page-footer container">
-      <a class="link logo" href="./index.html"
-        >Web<span class="footer-logo-accent">Studio</span></a
-      >
-      <address>
-        <div class="adr">
-          <ul class="footer-contacts list">
-            <li class="footer-contacts-item">
-              <a
-                class="footer-adress link"
-                href=" https://goo.gl/maps/PGf1aji3u7h2vcn76"
-                target="_blank"
-                rel="noopener noreferrer"
-                >г. Киев, пр-т Леси Украинки, 26</a
-              >
-            </li>
-            <li class="footer-contacts-item">
-              <a class="footer-email link" href="mailto:info@example.com"
-                >info@example.com</a
-              >
-            </li>
-            <li class="footer-contacts-item">
-              <a class="footer-tel link" href="tel:+380991111111"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
-      </address>
+    <footer class="page-footer">
+      <div class="container">
+        <a class="link logo" href="./index.html"
+          >Web<span class="footer-logo-accent">Studio</span></a
+        >
+        <address>
+          <div class="adr">
+            <ul class="footer-contacts list">
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-adress link"
+                  href=" https://goo.gl/maps/PGf1aji3u7h2vcn76"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a class="footer-email link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <a class="footer-tel link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
