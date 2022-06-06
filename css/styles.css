@@ -32,8 +32,9 @@ button {
 .list {
   list-style: none;
 }
-.img {
+img {
   display: block;
+  max-width: 100%;
 }
 
 body {
@@ -79,7 +80,12 @@ body {
   display: flex;
   align-items: center;
 }
-
+.header-nav .link {
+  display: block;
+}
+.header-contacts {
+  display: block;
+}
 .logo {
   font-family: "Raleway", "Verdana", "Tahoma", sans-serif;
   color: var(--logo-accent);
@@ -123,7 +129,10 @@ body {
   align-items: center;
   margin-left: auto;
 }
-.header-email {
+/*.header-email {
+  margin-right: 50px;
+}*/
+.header-contacts .item:not(:last-child) {
   margin-right: 50px;
 }
 .header-contacts .link {
@@ -222,14 +231,23 @@ body {
 .dealing {
   padding-top: 0;
 }
-
-.dealing-item:not(:last-child) {
-  margin-right: 30px;
+.dealing-list {
+  display: flex;
+  /*justify-content: space-between;*/
+  margin: 0 -15px;
+}
+.dealing-link {
 }
 .dealing-item {
   width: 370px;
-  height: 294px;
+  /*height: 294px;*/
+  flex-basis: calc((100%-60) / 3);
+  margin: 0 15px;
+  outline: 1px dashed green;
 }
+.dealing-link {
+}
+
 .dealing-title {
   font-size: 36px;
   line-height: 1.17;
