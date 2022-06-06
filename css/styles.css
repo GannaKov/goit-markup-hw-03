@@ -87,25 +87,28 @@ body {
   display: block;
 }
 .logo {
+  margin-right: 93px;
+  
   font-family: "Raleway", "Verdana", "Tahoma", sans-serif;
   color: var(--logo-accent);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+  
 }
 .logo-accent {
   color: rgba(33, 33, 33, 1);
 }
 
 .header-list {
+  display: flex;
+  align-items: center;
   color: rgba(33, 33, 33, 1);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
+  
 }
 .header-list-item:not(:last-child) {
   margin-right: 50px;
@@ -159,19 +162,22 @@ body {
   padding: 200px 235px;
 }
 .hero-title {
+  width: 696px;
+  margin: 0 auto 30px;
   text-align: center;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
-  margin: 0 auto 30px;
+  
 
   color: rgba(255, 255, 255, 1);
 }
 
 .hero-btn {
+  padding: 10px 32px;
   display: block;
   margin: 0 auto;
   min-width: 200px;
@@ -188,7 +194,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  padding: 10px 32px;
+  
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid transparent;
@@ -240,8 +246,6 @@ body {
 .dealing-link {
 }
 .dealing-item {
-  width: 370px;
-  /*height: 294px;*/
   flex-basis: calc((100%-60) / 3);
   margin: 0 15px;
   outline: 1px dashed green;
@@ -250,11 +254,13 @@ body {
 }
 
 .dealing-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  
 }
 
 /* -------Блок Наша команда-------*/
@@ -389,14 +395,24 @@ body {
 /* ---- Список карточек ---------*/
 .examles-card {
 }
-.exaples-list {
+
+.examples-navi {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
 }
 
-.exaples-list-item {
-  width: 370px;
-  margin: 15px;
+.exaples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
-.exaples-list-item:nth-of-type(3n) {
+.exaples-list-item {
+  margin: 15px;
+  calc((100%-60)/3);
+  
+}
+/*.exaples-list-item:nth-of-type(3n) {
   margin-right: 0;
 }
 .exaples-list-item:nth-of-type(3n + 1) {
@@ -407,22 +423,21 @@ body {
 }
 .exaples-list-item:nth-of-type(-n + 3) {
   margin-top: 0;
-}
+}*/
 .examples-content {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
-.exaples-link {
-}
-.link {
-}
 .examples-sec-title {
+margin-bottom: 4px;
+
   color: var(--sec-title-color);
 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-bottom: 4px;
+  
 }
 
 .examples-text {
