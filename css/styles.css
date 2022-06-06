@@ -62,7 +62,7 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px dashed tomato;
+  /*outline: 1px dashed tomato;*/
 }
 .section {
   padding: 94px 0;
@@ -88,7 +88,7 @@ body {
 }
 .logo {
   margin-right: 93px;
-  
+
   font-family: "Raleway", "Verdana", "Tahoma", sans-serif;
   color: var(--logo-accent);
   font-weight: 700;
@@ -215,7 +215,7 @@ body {
 }*/
 .qualities-item {
   width: 270px;
-  outline: 1px dashed green;
+  /*outline: 1px dashed green;*/
 }
 .qualities-list {
   display: flex;
@@ -248,7 +248,7 @@ body {
 .dealing-item {
   flex-basis: calc((100%-60) / 3);
   margin: 0 15px;
-  outline: 1px dashed green;
+ /* outline: 1px dashed green;*/
 }
 .dealing-link {
 }
@@ -274,6 +274,8 @@ body {
   background-color: rgba(255, 255, 255, 1);
   width: 270px;
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
