@@ -59,7 +59,7 @@ body {
 /*-------------------------------*/
 /*------------ header -----------*/
 .container {
-  width: 1230px;
+  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   outline: 1px dashed tomato;
@@ -209,6 +209,7 @@ body {
 }*/
 .qualities-item {
   width: 270px;
+  outline: 1px dashed green;
 }
 .qualities-list {
   display: flex;
@@ -260,6 +261,9 @@ body {
 .team {
   background-color: rgba(245, 244, 250, 1);
 }
+.team-list {
+  display: flex;
+}
 .team-item {
   background-color: rgba(255, 255, 255, 1);
   width: 270px;
@@ -276,6 +280,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team-sec-title {
