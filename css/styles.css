@@ -120,9 +120,9 @@ body {
   color: rgba(33, 33, 33, 1);
 }*/
 
-.header-list .link:visited {
+/*.header-list .link:visited {
   color: rgba(33, 33, 33, 1);
-}
+}*/
 
 .header-list .link.current {
   color: var(--link-hover);
