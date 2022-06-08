@@ -69,7 +69,7 @@ body {
 }
 
 .page-header {
-  padding: 24px 0 25px;
+  /*padding: 24px 0 25px;*/
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 .page-header .container {
@@ -99,7 +99,12 @@ body {
 .logo-accent {
   color: rgba(33, 33, 33, 1);
 }
-
+.header-list-item .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: rgba(33, 33, 33, 1);
+}
 .header-list {
   display: flex;
   align-items: center;
@@ -111,9 +116,9 @@ body {
 .header-list-item:not(:last-child) {
   margin-right: 50px;
 }
-.header-list.link {
+/*.header-list.link {
   color: rgba(33, 33, 33, 1);
-}
+}*/
 
 .header-list .link:visited {
   color: rgba(33, 33, 33, 1);
@@ -127,6 +132,11 @@ body {
 .header-contacts .link:focus,
 .header-contacts .link:hover {
   color: var(--link-hover);
+}
+.header-contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-contacts {
   display: flex;
