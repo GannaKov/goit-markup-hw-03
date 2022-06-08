@@ -87,8 +87,6 @@ body {
   display: block;
 }
 .logo {
-  margin-right: 93px;
-
   font-family: "Raleway", "Verdana", "Tahoma", sans-serif;
   color: var(--logo-accent);
   font-weight: 700;
@@ -96,6 +94,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.page-header .logo {
+  margin-right: 93px;
+}
+
 .logo-accent {
   color: rgba(33, 33, 33, 1);
 }
@@ -256,7 +258,7 @@ body {
 .dealing-link {
 }
 .dealing-item {
-  flex-basis: calc((100%-90) / 3);
+  flex-basis: calc((100%-60px) / 3);
   margin: 15px;
   /* outline: 1px dashed green;*/
 }
@@ -413,7 +415,7 @@ body {
 .examples-navi {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 56px;
 }
 
 .exaples-list {
