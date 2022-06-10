@@ -62,7 +62,7 @@ body {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
-  /*outline: 1px dashed tomato;*/
+  outline: 1px dashed tomato;
 }
 .section {
   padding: 94px 0;
@@ -225,13 +225,16 @@ body {
 /*.qualities-item:not(:last-child) {
   margin-right: 30px;
 }*/
-.qualities-item {
-  width: 270px;
-  /*outline: 1px dashed green;*/
-}
 .qualities-list {
   display: flex;
-  justify-content: space-between;
+  /*margin: -15px;*/
+  column-gap: 30px;
+}
+.qualities-item {
+  outline: 1px dashed green;
+  /*width: calc((100% - 4 * 30px) / 4);
+  margin: 15px;*/
+  width: calc((100% - 3 * 30px) / 4);
 }
 
 .qualities-sec-title {
@@ -241,6 +244,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .qualities-text {
   color: var(--paragraph-text);
   line-height: 1.71;
@@ -252,13 +256,12 @@ body {
 }
 .dealing-list {
   display: flex;
-  /*justify-content: space-between;*/
   margin: -15px;
 }
 .dealing-link {
 }
 .dealing-item {
-  flex-basis: calc((100%-60px) / 3);
+  flex-basis: calc((100%-3 * 30px) / 3);
   margin: 15px;
   /* outline: 1px dashed green;*/
 }
@@ -283,7 +286,7 @@ body {
 }
 .team-item {
   background-color: rgba(255, 255, 255, 1);
-  width: 270px;
+  width: calc((100% -3 * 30px) / 4);
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -301,7 +304,7 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.time-img {
+.team-img {
   margin-bottom: 30px;
 }
 .team-sec-title {
@@ -330,9 +333,13 @@ body {
   padding: 60px 0;
 }
 
-.adr {
-  margin-top: 20px;
+.page-footer .logo {
+  display: block;
+  margin-bottom: 20px;
 }
+/*.adr {
+  margin-top: 20px;
+}*/
 .footer-contacts-item:not(:last-child) {
   margin-bottom: 9px;
 }
